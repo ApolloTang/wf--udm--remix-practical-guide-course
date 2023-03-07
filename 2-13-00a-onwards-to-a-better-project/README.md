@@ -1,16 +1,17 @@
-*File: app/routes/demo.jsx*
+*File: app/routes/index.jsx*
 
 ```sh
 import { Link } from '@remix-run/react';
 
 export default function Index() {
   return (
-    <>
-      <h1>hello world!</h1>
-      <a href="/demo">Go to Demo Page with anchor</a>
-      <br></br>
-      <Link to="/demo">Go to Demo Page with Link</Link>
-    </>
+    <main id="content">
+      <h1>A better way of keeping track of your notes</h1>
+      <p>Try our early beta and never loose track of your notes again!</p>
+      <p id="cta">
+        <Link to="/notes">Try Now!</Link>
+      </p>
+    </main>
   );
 }
 ```
