@@ -1,4 +1,4 @@
-*File: app/routes/demo.jsx*
+*File: app/routes/index.jsx*
 
 ```sh
 import { Link } from '@remix-run/react';
