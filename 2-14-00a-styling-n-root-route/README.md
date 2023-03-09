@@ -2,6 +2,12 @@
 
 
 
+## To read: 
+
+[https://remix.run/docs/en/1.14.0/guides/styling](https://remix.run/docs/en/1.14.0/guides/styling)
+
+
+
 *File: app/root.jsx*
 
 ```jsx
