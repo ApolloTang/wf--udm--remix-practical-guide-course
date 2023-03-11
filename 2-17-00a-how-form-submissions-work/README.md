@@ -25,7 +25,13 @@
 }
 ```
 
-This form is behaves just normal HTML form: When `<button>` is clicked, it will post to whatever the url this Remix app is running (http://192.168.2.14:3000) using the `post` method (method is specify by the `method` attribute on the `<form>` element).
+This form is behaves just normal HTML form: When `<button>` is clicked, it will post to whatever the url this Remix app is running, using the `post` method (method is specify by the `method` attribute on the `<form>` element). So in out case, the url will be: 
+
+```
+http://192.168.2.14:3000/notes?title=sadf&content=asdf
+```
+
+
 
 
 
