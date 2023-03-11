@@ -1,6 +1,6 @@
 # 17 How form submissions work
 
-*file: / app/components/NewNote.jsx*
+*file: ~/app/components/NewNote.jsx*
 
 ```jsx
   // ....
