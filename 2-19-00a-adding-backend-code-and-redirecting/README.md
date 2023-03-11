@@ -1,10 +1,8 @@
 # 18 Server side form handling via action function
 
-*file: / app/route/notes.jsx*
+*file: ~/app/route/notes.jsx*
 
 ```jsx
-  // ....
-  
 export async function action({ request }) {
   // This "action" function is a server side function.
   // It will not be sent to the client.
@@ -14,21 +12,21 @@ export async function action({ request }) {
 
   const formData = await request.formData();
   const noteData = Object.fromEntries(formData);
-  // Add validation...
+  // noteData will be an object with the shape:
+  // {
+  //   title: ....,
+  //   content: ...
+  // }
+  
+  // @TODO Add validation...
+  
   const existingNotes = await getStoredNotes();
   noteData.id = new Date().toISOString();
   const updatedNotes = existingNotes.concat(noteData);
   await storeNotes(updatedNotes);
   return redirect('/notes');
 }
-
-  ); 
-  
-  // ....
-}
 ```
-
-This form is behaves just normal HTML form: When `<button>` is clicked, it will post to whatever the url this Remix app is running (http://192.168.2.14:3000) using the `post` method (method is specify by the `method` attribute on the `<form>` element).
 
 
 

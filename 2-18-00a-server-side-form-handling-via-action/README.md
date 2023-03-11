@@ -1,6 +1,6 @@
 # 18 Server side form handling via action function
 
-*file: / app/route/notes.jsx*
+*file: ~/app/route/notes.jsx*
 
 ```jsx
 export async function action({ request }) {
