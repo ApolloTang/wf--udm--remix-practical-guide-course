@@ -9,6 +9,12 @@ export default function NotesPage() {
 }
 
 export async function action({ request }) {
+  // This "action" function is a server side function.
+  // It will not be sent to the client.
+  // It will only be triggered when a non "get" method is sent to
+  //   <base-url>/notes
+  //
+  
   console.dir(request, {showHidden: false, depth: 2, colors: false});
 
   /*
